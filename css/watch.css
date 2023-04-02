@@ -1,0 +1,162 @@
+.header-watch {
+    background-image: url(../img/watch-img/watch-banner.jpg);
+}
+.watch-footer .footer-bg {
+    background-size: 100% 100%;
+    background-image: url(../img/watch-img/watch-banner.jpg);
+}
+main {
+
+}
+.main-header {
+    margin: 0 60px;
+    border-bottom:  4px solid var(--hover-color);
+}
+.main-header h3 {
+    text-align : center;
+    font-size: 22px;
+    margin: 30px 0;
+    font-weight: 400;
+}
+.main-header-img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.main-header img {
+    height: 120px;
+}
+.box-list {
+    padding: 0 70px;    
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    transform: translateY(100px);
+}
+.box {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    width: calc(33.33% - 16px);
+
+    height: 260px;
+
+    position: relative;
+    transition: all .3s ease;
+    margin-bottom: 24px;
+    overflow: hidden;
+}
+.box-1,.box-2,.box-4 {
+    margin-right: 24px;
+}
+
+.box-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    align-items: center;
+
+}
+
+.box-number {
+    margin-right: 20px;
+    position: relative;
+}
+.box-season {
+    font-size: 22px;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-decoration: underline;
+    transform: translateY(100%);
+}
+
+.box-number h2 {
+    font-size: 80px;
+    font-weight: 500;
+    line-height: 1;
+    text-decoration: underline;
+}
+
+.box-number sup {
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: underline;
+    position: absolute;
+    top: 0;
+    right: -20px;
+}
+
+
+.box:hover .box-number h2  {
+    text-decoration-color: var(--hover-color);
+
+}
+.box:hover .box-number sup {
+    text-decoration-color: var(--hover-color);
+}
+.box:hover .box-content h3 {
+    text-decoration-color: var(--hover-color);
+
+}
+
+.line {
+    height: 3px;
+    width: 230px;
+    background-color: var(--hover-color);
+
+    position: absolute;
+    top: 50%;
+    left: 46%;
+
+
+    transform: translate(-50%,-50%) rotate(-65deg);
+    transition: all .3s ease;
+}
+.box:hover .line {
+    width: 300px;
+    transition: all .3s ease;
+}
+.box-1 {
+    background-image: url('../img/watch-img/s1.jpg');
+}
+.box-2 {
+    background-image: url('../img/watch-img/s2.jpg');
+}
+.box-3 {
+    background-image: url('../img/watch-img/s3.jpg');
+}
+.box-4 {
+    background-image: url('../img/watch-img/s4.jpg');
+}
+.box-5 {
+    background-image: url('../img/watch-img/s5.jpg');
+}
+@media screen and (max-width:1024px) {
+    .box {
+        width: calc(50% - 12px); 
+    }
+    .box-2,.box-4 {
+        margin-right: 0;
+    }
+    .box-1,.box-3 {
+        margin-right: 24px;
+    }
+}
+@media screen and (max-width:768px) {
+    .box-list {
+        padding: 0 20px;
+    }
+    .main-header  {
+        margin: 0 20px;
+    }
+}
+@media screen and (max-width:600px) {
+    .box {
+        width: 100%;
+        margin-right: 0;
+    }
+}

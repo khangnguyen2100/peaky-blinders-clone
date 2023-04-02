@@ -1,0 +1,71 @@
+.header-cast {
+    background-image: url('../img/cast-img/cast-banner.jpg');
+}
+.cast-footer .footer-bg {
+    background-image: url('../img/cast-img/cast-banner.jpg');
+}
+
+.cast-list {
+    padding: 20px 70px;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+.cast-item {
+    width: calc(33.33% - 16px);
+    height: 300px;
+    position: relative;
+    margin-bottom: 24px;
+}
+@media screen and (max-width:1080px) {
+    .cast-list {
+        padding: 20px ;
+    }
+    .cast-item {
+        width: calc(50% - 12px);
+    }
+}
+@media screen and (max-width:768px) {
+    .cast-list {
+        padding: 20px 70px;
+    }
+    .cast-item {
+        width: 100%;
+    }
+}
+@media screen and (max-width:520px) {
+    .cast-list {
+        padding: 20px;
+    }
+}
+.cast-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    padding-left: 10px;
+    padding-bottom: 10px;
+    padding-top: 100px;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,.0) 0%,rgba(0,0,0,.9) 100%);
+}
+.cast-name {
+    color: var(--hover-color);
+    font-size: 24px;
+    font-weight: 500;
+    text-transform: capitalize;
+
+}
+.cast-actor {
+    color: #fff;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+.cast-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
